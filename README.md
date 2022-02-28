@@ -1,21 +1,21 @@
 # CS-305-Software-Security
-Briefly summarize your client, Artemis Financial, and their software requirements. Who was the client? What issue did they want you to address?
+##### Briefly summarize your client, Artemis Financial, and their software requirements. Who was the client? What issue did they want you to address?
 The client that we worke with for this project was Artemis Financial. They are a financial consulting company that develops individual plans for retirement plans, savings plans, and insurance for their consumers. The client already had a  RESTful web application programming interface and wanted our assistance with software security measures. 
 
-What did you do particularly well in identifying their software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall wellbeing?
+##### What did you do particularly well in identifying their software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall wellbeing?
 I did well with identifying the software security vulnerabilities through manual code inspection and the running of a OWASP dependency check. Secure coding is important because a lot of dependencies that are used have vulnerabilities associated with them already. The goal is always to not have ulnerabilites within your code in addition to the vulnerabilities within the dependecies that may already expose your software to external threats. Taking steps to create secure code and diminish vulnerabilities within the dependencies adds value to the company's reputation and reliability. Having secure software lets the clients consumer know that their information is safe with the client and is not at threat of data breach or any other external threat. 
 
-What about the process of working through the vulnerability assessment did you find challenging or helpful?
+##### What about the process of working through the vulnerability assessment did you find challenging or helpful?
 The process of working through the dependencies was helpful for me. Reading through each dependency and assessing them for mitigation tactics really helped me understand which vulnerabilites were true and which were false-positives. 
 
-How did you approach the need to increase layers of security? What techniques or strategies would you use in the future to assess vulnerabilities and determine mitigation techniques?
+##### How did you approach the need to increase layers of security? What techniques or strategies would you use in the future to assess vulnerabilities and determine mitigation techniques?
 I approached the need to increase security by looking at each vulnerability and determining what vulnerabilities could be mitigated and which couldnt. For example, a lot of the vulnerabilities within the dependency check could be mitigated by upgrading the version of the dependency. I will definitely use the strategy in the future. Another strategy that I will use that was learned later on will be to suppress vulnerabilities that are false-positives. At face value, suppressing vulnerabilities will not affect the overall security of the software. However, suppressing fals-positives can help to keep the vulnerabilities at a minimum so that proper attention can be given to actual vulnerabilites that may come up as dependency checks are run on the software. 
 
-How did you ensure the code and software application were functional and secure? After refactoring code, how did you check to see whether you introduced new vulnerabilities?
+###### How did you ensure the code and software application were functional and secure? After refactoring code, how did you check to see whether you introduced new vulnerabilities?
 Ensuring that the code was functional and secure was accomplished by creating a certificate and then running the project using a REST controller after creating the code for the algorithm cipher. Upon running the program, if the software was secure and functinal, the local host site would show a personal message, the cipher that was used, and the encrypted message. After refactoring the code, an additional dependedncy check was run to ensure that additional vulnerabilites werent introduced into the program. 
 
-What resources, tools, or coding practices did you employ that you might find helpful in future assignments or tasks?
+###### What resources, tools, or coding practices did you employ that you might find helpful in future assignments or tasks?
 The practices that I will find helpful in the future will be dependency checks, certifcate creations, and suppression files. These will all come in handy when evaluating programs for security and instilling security within the program. These tools were easy to catch on to but also required follow up research when mistakes were made. Because of this, these tools have been and will be the most helpful.
 
-Employers sometimes ask for examples of work that you have successfully completed to demonstrate your skills, knowledge, and experience. What from this particular assignment might you want to showcase to a future employer?
+###### Employers sometimes ask for examples of work that you have successfully completed to demonstrate your skills, knowledge, and experience. What from this particular assignment might you want to showcase to a future employer?
 I would want to showcase my static testing and mitigation plan to my employer. The static testing showcases my understanding of a dependency report and vulnerabilities. The mitigation plan showcases my ability to problem solve and mitigate any vulnerabilities that are not false-positives or dont have a fix yet. 
